@@ -12,7 +12,7 @@
         <form id="movieForm" class="mb-3">
             <div class="mb-3">
                 <label for="movieName" class="form-label">Nome del Film:</label>
-                <input type="text" id="movieName" name="movieName" class="form-control" required>
+                <input type="text" class="form-control" id="movieName" name="movieName" required>
             </div>
             <button type="submit" class="btn btn-primary">Cerca</button>
         </form>
@@ -21,7 +21,7 @@
     <section id="results-section">
         <h2>Risultati</h2>
         <div id="movieInfo" class="row">
-            {{!-- I risultati verranno inseriti qui --}}
+            {{!-- Le card dei film verranno inserite qui da movieSearch.js --}}
         </div>
     </section>
 </div>
