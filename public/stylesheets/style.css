@@ -1,0 +1,74 @@
+/* public/stylesheets/style.css */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #343a40;
+
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+nav a{
+  color: #fff;
+  text-decoration: none;
+}
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  /*  position: fixed; Rimuovi se non vuoi il footer fisso */
+  /*  bottom: 0; */
+  /*  width: 100%; */
+}
+
+
+/* Stili per le miniature nella home page (IMPORTANTE) */
+.movie-card .card-img-top {
+  height: 200px;        /* Altezza fissa (o max-height) - REGOLA QUESTO VALORE */
+  object-fit: cover;   /* Ritaglia e mantiene le proporzioni - FONDAMENTALE */
+  width: 100%;         /* Assicurati che occupi tutta la larghezza disponibile */
+  /* border-bottom: 1px solid #ddd;  (opzionale) */
+}
+
+/* Stili per l'immagine a dimensione intera nella pagina dei dettagli */
+.movie-detail-image {
+  width: 100%;
+  max-width: 400px;  /* o la dimensione che preferisci */
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Stile per le card Bootstrap */
+.card {
+  transition: transform 0.2s ease-in-out; /* Aggiunge una transizione fluida */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Ingrandisce leggermente la card al passaggio del mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
+  /* Altri stili che potresti voler aggiungere: */
+  /* border-color: #007bff;  Cambia il colore del bordo */
+  /* cursor: pointer;         Cambia il cursore in una "mano" */
+}
